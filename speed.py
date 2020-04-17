@@ -37,6 +37,7 @@ def fast():
     }
 
 def speed():
+    global ts
     ts = int(time.time())
 
     servers = []
