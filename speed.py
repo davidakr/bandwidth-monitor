@@ -63,9 +63,9 @@ def main():
             CREATE TABLE IF NOT EXISTS RESULTS(
                 server TEXT,
                 ts INTEGER,
-                ping INTEGER,
-                download INTEGER,
-                upload INTEGER,
+                ping FLOAT,
+                download FLOAT,
+                upload FLOAT,
                 PRIMARY KEY (server, ts)
             )
         """)
