@@ -65,7 +65,7 @@ def main():
             CREATE TABLE IF NOT EXISTS RESULTS(
                 server TEXT,
                 ts INTEGER,
-                ping DOUBLE,
+                ping INTEGER,
                 download DOUBLE,
                 upload DOUBLE,
                 PRIMARY KEY (server, ts)
