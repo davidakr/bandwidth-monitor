@@ -67,13 +67,13 @@ def index():
                         if r[0] != 'fast.com'
                     ],
                     mode = 'lines+markers',
-                    name = 'Ping'
+                    name = 'Ping [ms]'
                 )
             ],
             layout=dict(
-                title='Bandwidth',
+                title='Network Monitoring',
                 yaxis=dict(
-                    title="Bandwidth"
+                    title="Bandwidth [Mbps]"
                 ),
                 xaxis=dict(
                     title="Time"
