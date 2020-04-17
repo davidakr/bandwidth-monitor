@@ -54,7 +54,7 @@ def speed():
             sponsor=results_dict['server']['sponsor'],
         ),
         'ts': ts,
-        'ping': float(results_dict['ping']),
+        'ping': int(results_dict['ping']),
         'download': float(results_dict['download']) // 1000000,
         'upload': float(results_dict['upload']) // 1000000,
     }
