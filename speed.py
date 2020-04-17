@@ -4,9 +4,10 @@ import sqlite3
 import subprocess
 import time
 
+ts = 0
+
 def fast():
     # Start chromium in headless mode
-    ts = int(time.time())
     proc = subprocess.Popen(
         ['/usr/bin/chromium-browser', '--headless', '--repl', 'https://www.fast.com/'],
         stdin=subprocess.PIPE,
@@ -26,7 +27,7 @@ def fast():
         outs, errs = proc.communicate()
     else:
         proc.terminate()
-
+        
     return {
         'server': 'fast.com',
         'ts': ts,
