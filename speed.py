@@ -31,7 +31,7 @@ def fast():
         'server': 'fast.com',
         'ts': ts,
         'ping': -1,
-        'download': int(json.loads(outs.decode('utf-8')[4:-5])['result']['value']),
+        'download': float(json.loads(outs.decode('utf-8')[4:-5])['result']['value']),
         'upload': -1,
     }
 
@@ -52,9 +52,9 @@ def speed():
             sponsor=results_dict['server']['sponsor'],
         ),
         'ts': ts,
-        'ping': int(results_dict['ping']),
-        'download': int(results_dict['download']) // 1000000,
-        'upload': int(results_dict['upload']) // 1000000,
+        'ping': float(results_dict['ping']),
+        'download': float(results_dict['download']) // 1000000,
+        'upload': float(results_dict['upload']) // 1000000,
     }
 
 def main():
